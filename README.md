@@ -7,4 +7,4 @@ The next step was to create GeoJSON files of each region in France using geojson
 The GeoJSON files were then added to the Leaflet map with Javascript language embedded in the HTML file. 
 
 # Link to map
-
+https://larsenamy14.github.io/SpanishWineRegions/
