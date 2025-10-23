@@ -3,22 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Leaflet Map with GeoJSON</title>
+    <title>Spanish Wine Regions</title>
     <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
     <style>
         #map {
             height: 1000px;
             width: 100%;
         }
+        .headiing-container {
+            text-align: center;
+            background-color: rgba(128, 0, 32, 0.2);
+            padding: 20px;
+            border: 2 px solid #333;
+            border-radius: 10px; 
+            margin-bottom: 20px; /* Space btwn heading and map */  
+        }
+        h1 {
+            margin: 0;
+            border: 2px solid #333; /* Border around heading */
+            padding: 10px;
+            display: inline-block;
+            border-radius: 5px;
+        }
     </style>
 </head>
 <body>
+    <div class="heading-container">
+        <h1>Map of the Spanish Wine Regions</h1>
+        <p>Use this map to explore the wine regions of Spain</p>
+    </div>
+
     <div id="map"></div>
 
     <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
     <script>
         // Initialize the map and set its view
-        var map = L.map('map').setView([46, 4.8], 6); // Centered on France
+        var map = L.map('map').setView([38, -2.2], 6); // Centered on Spain
 
         // Add a tile layer (the base map)
         L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -34,7 +54,7 @@
                     L.geoJSON(data, {
                         style: function(feature) {
                             return {
-                                color: "#800000", // Dark red color for the borders
+                                color: "#EE4B2B", // Dark red color for the borders
                                 weight: 2,
                                 fillOpacity: 0.5
                             };
@@ -61,12 +81,7 @@
         }
 
         // Load the GeoJSON files
-        addGeoJSON('src/data/RhoneValley.geojson');
-        addGeoJSON('src/data/Bordeaux.geojson');
-        addGeoJSON('src/data/Champagne.geojson');
-        addGeoJSON('src/data/Burgundy.geojson');
-        addGeoJSON('src/data/LoireValley.geojson');
-        addGeoJSON('src/data/Languedoc-Roussillon.geojson');
+        addGeoJSON('src/data/NWSpain.geojson');
         
     </script>
 </body>
