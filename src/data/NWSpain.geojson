@@ -1,12 +1,12 @@
 {"type":"FeatureCollection",
-    "features":[
-        {
-            "type":"Feature",
-            "properties":{
-                "region":"Northwest Spain",
-                "name":"Galicia",
-                "subregions":"Rias Baixas"
-            },
+"features":[
+    {
+        "type":"Feature",
+        "properties":{
+            "region":"Northwest Spain",
+            "name":"Galicia",
+            "subregions":"Rias Baixas"
+        },
             "geometry":{
                 "type":"Polygon",
                 "coordinates":[
@@ -24,16 +24,16 @@
                 ]
             }
         },
-        {
-            "type":"Feature",
-            "properties":{
-                "region":"Northwest Spain",
-                "name":"Pais Vasco",
-                "subregions":[
-                    "Getariako Txakolina",
-                    "Bizkaiako Txakolina",
-                    "Arabako Txakolina"
-                ]
+    {
+        "type":"Feature",
+        "properties":{
+            "region":"Northwest Spain",
+            "name":"Pais Vasco",
+            "subregions":[
+                "Getariako Txakolina",
+                "Bizkaiako Txakolina",
+                "Arabako Txakolina"
+            ]
             },
             "geometry":{
                 "type":"Polygon",
@@ -52,19 +52,19 @@
                 ]
             }
         },
-        {
-            "type":"Feature",
-            "properties":{
-                "region":"Northwest Spain",
-                "name":"Castilla and Leon",
-                "subregions":[
-                    "Toro",
-                    "Ribera Del Duero",
-                    "Rueda"
-                ]
-            },
+    {
+    "type":"Feature",
+    "properties":{
+        "region":"Northwest Spain",
+        "name":"Castilla and Leon",
+        "subregions":[
+            "Toro",
+            "Ribera Del Duero",
+            "Rueda"
+        ]
+        },
             "geometry":{
-                "type":"Polygon"
+                "type":"Polygon",
                 "coordinates":[
                     [
                         [-6.764545460736855,42.84040459362589],
