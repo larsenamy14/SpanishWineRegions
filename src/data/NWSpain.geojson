@@ -64,7 +64,7 @@
                 ]
             },
             "geometry":{
-                "type":"Polygon"
+                "type":"Polygon",
                 "coordinates":[
                     [
                         [-6.764545460736855,42.84040459362589],
